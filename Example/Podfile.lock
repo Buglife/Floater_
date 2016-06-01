@@ -1,0 +1,29 @@
+PODS:
+  - "Floater\U0001F4A9/AppStuff (0.1.0)":
+    - "Floater\U0001F4A9/Shared"
+  - "Floater\U0001F4A9/Shared (0.1.0)":
+    - HSTestingBackchannel (= 1.2.1)
+  - "Floater\U0001F4A9/UITestStuff (0.1.0)":
+    - "Floater\U0001F4A9/Shared"
+  - GCDWebServer (3.3.2):
+    - GCDWebServer/Core (= 3.3.2)
+  - GCDWebServer/Core (3.3.2)
+  - HSTestingBackchannel (1.2.1):
+    - GCDWebServer
+
+DEPENDENCIES:
+  - "Floater\U0001F4A9/AppStuff (from `../`)"
+  - "Floater\U0001F4A9/UITestStuff (from `../`)"
+
+EXTERNAL SOURCES:
+  "Floater\U0001F4A9":
+    :path: "../"
+
+SPEC CHECKSUMS:
+  "Floater\U0001F4A9": 950324a2a72ec215cd7e7ea026918e10003ff1b9
+  GCDWebServer: 2a375ec42839a41d7187d04e5b688d32fa5c4cd5
+  HSTestingBackchannel: 7d2082931aa150ed809b4258dd86a3f710e5b223
+
+PODFILE CHECKSUM: 9620bd6d984806c187b10954a3015898afc3a5af
+
+COCOAPODS: 1.0.0

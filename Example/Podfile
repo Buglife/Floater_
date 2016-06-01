@@ -1,0 +1,9 @@
+use_frameworks!
+
+target 'Rappers' do
+  pod 'Floater💩/AppStuff', :path => '../'
+end
+
+target 'RappersUITests' do
+  pod 'Floater💩/UITestStuff', :path => '../'
+end
