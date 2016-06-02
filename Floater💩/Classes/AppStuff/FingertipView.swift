@@ -105,7 +105,7 @@ class FingertipView: UIView {
 }
 
 private extension NSLayoutConstraint {
-    public convenience init(item view1: AnyObject, attribute attr1: NSLayoutAttribute, toItem view2: AnyObject?, multiplier: CGFloat = 1) {
+    convenience init(item view1: AnyObject, attribute attr1: NSLayoutAttribute, toItem view2: AnyObject?, multiplier: CGFloat = 1) {
         self.init(item: view1, attribute: attr1, relatedBy: .Equal, toItem: view2, attribute: attr1, multiplier: multiplier, constant: 0)
     }
 }

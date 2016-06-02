@@ -16,7 +16,7 @@ class Floater💩Window: UIWindow {
     
     // MARK: Initialization
     
-    public init() {
+    init() {
         super.init(frame: UIScreen.mainScreen().bounds)
         
         // Window configuration
@@ -30,7 +30,7 @@ class Floater💩Window: UIWindow {
         setNeedsUpdateConstraints()
     }
     
-    required public init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -38,13 +38,13 @@ class Floater💩Window: UIWindow {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
-    public func prepare() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("applicationDidFinishLaunching:"), name: UIApplicationDidFinishLaunchingNotification, object: nil)
+    func prepare() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(Floater💩Window.applicationDidFinishLaunching(_:)), name: UIApplicationDidFinishLaunchingNotification, object: nil)
     }
     
     // MARK: UIView overrides
     
-    override public func sendEvent(event: UIEvent) {
+    override func sendEvent(event: UIEvent) {
         if event.type == .Touches, let touches = event.allTouches() {
             let didTouchDown = touches.contains { $0.phase == .Began }
             let didTouchUp = touches.contains { $0.phase == .Ended || $0.phase == .Cancelled }
@@ -60,7 +60,7 @@ class Floater💩Window: UIWindow {
         super.sendEvent(event)
     }
     
-    override public func updateConstraints() {
+    override func updateConstraints() {
         if needsConstraints {
             let centerConstraintX = NSLayoutConstraint(item: fingertipView, attribute: .Left, relatedBy: .Equal, toItem: self, attribute: .Left, multiplier: 1, constant: 140)
             let centerConstraintY = NSLayoutConstraint(item: fingertipView, attribute: .Top, relatedBy: .Equal, toItem: self, attribute: .Top, multiplier: 1, constant: 288)
