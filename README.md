@@ -1,10 +1,10 @@
 ![Floater💩](https://d19rwogc3unx97.cloudfront.net/assets/logo/floater_on_transparent_471x97-251372f87f8080fd5e0c57fa07be31b12eb2665fc2af62999cdecb6d11782457.png)
 
-Easily add a floating fingertip to your app demo.
+Add a floating fingertip & automate your app demo video using Xcode UI tests.
 
-Ever tried to record a demo video of your app, but the end result looks weird without a finger on the screen? Floater💩 is a tool that puts a floating fingertip on your screen. It uses Xcode UI tests, and it's great. Your app needs it.
+Check out our [blog post](https://medium.com/buglife/make-demo-videos-great-again-d369e46c0f15) for more info.
 
-![Video](https://d19rwogc3unx97.cloudfront.net/assets/temp/floater1-ec98a567daaac8dacb253aeb03cb62fbce72ad73eaf10dee50eafd6d80095ef4.gif)
+![Video](https://d19rwogc3unx97.cloudfront.net/assets/temp/floater_iphone_gold-4c7ea684edd37c887ff4a30b7cf2eedf50db4823e41461b27103b885972abded.gif)
 
 ## Example
 
